@@ -1,0 +1,51 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('../HARRYP__.TTF')
+}
+
+body {
+    font-family: myFirstFont;
+    background-image: url('../images/blank-parchment.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.jumbotron {
+    background-image: url('../images/harryvolde.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 100px;
+    color: goldenrod;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+/* h3, label {
+    color:
+    text-align: center;
+    color: black;
+} */
+
+/* img {
+    width: 200px;
+    height: 200px;
+} */
+
+/* #gameplay-screen {
+    background-image: url('../images/maraudersmap.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+} */
+
+/* #gameplay-screen, #results-screen {
+    display: none;
+} */

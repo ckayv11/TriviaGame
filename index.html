@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HP TRIVIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/hpfavicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+  <body>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+        <h1>Harry Potter Trivia!</h1>
+    </div>
+<!-- STARTING SCREEN -->
+    <div class="container mb-5">
+        <div class="row mt-5 mb-5" id="starting-screen">
+          <div class="col-md-12 mb-5 text-center">
+            <h2>Do you solemnly swear you are up to no good?</h2>
+            <button type="button" class="btn btn-dark btn-lg">YES</button>
+            <button type="button" class="btn btn-dark btn-lg">NO</button>
+          </div>
+        </div>
+
+<!-- GAMEPLAY SCREEN -->
+      <section id="gameplay-screen">
+        <div class="row">
+            <div class="col-md-12 text-center" id="show-time"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="question"></div>
+                <div id="answerOptions"></div>
+                  <button type="button" class="btn btn-dark btn-lg" id="answerA"></button>
+                  <button type="button" class="btn btn-dark btn-lg" id="answerB"></button>
+                  <button type="button" class="btn btn-dark btn-lg" id="answerC"></button>
+                  <button type="button" class="btn btn-dark btn-lg" id="answerD"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="caption"></div>
+                <div id="image"></div>
+            </div>
+        </div>
+        
+    </section>
+
+<!-- RESULTS SCREEN -->
+      <section id="results-screen">
+        <div class="row">
+            <div class="col-md-12">
+              <h2 id="done-message text-center"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+              <h3>Mischief Managed!</h3>
+              <p id="correct-answers"></p>
+              <p id="wrong-answers"></p>
+              <p id="unanswered"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+              <button type="button" class="btn btn-success btn-lg">PLAY AGAIN</button>
+            </div>
+        </div>
+      </section>
+    </div>
+<!-- AUDIO -->
+    <div>
+        <audio id="themesong">
+            <source src="assets/audio/hedwigTheme.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
