@@ -124,6 +124,11 @@ $(document).ready(function() {
             $("#starting-screen").hide();
             $("#gameplay-screen").show();
             displayQuestions();
+            $("#answerA").show();
+            $("#answerB").show();
+            $("#answerC").show();
+            $("#answerD").show();
+            $("#image").hide();
         });
 
     //Display first question and answer options

@@ -32,4 +32,29 @@ img {
     height: 300px;
 }
 
+/* Media Queries*/
   
+  @media screen and (max-width: 768px) {
+    body {padding-bottom: 50px;}
+    h1 {font-size: 75px;}
+    h2 {font-size: 35px;}
+    h3, h4, #play-again {font-size: 25px;}
+    #image {width: 100%; height: auto;}
+  }
+  
+  @media screen and (max-width: 640px) {
+    body {padding-bottom: 50px;}
+    h1 {font-size: 50px;}
+    h2 {font-size: 25px;}
+    h3, h4, #play-again {font-size: 20px;}
+    #image {width: 100%; height: auto;}
+  }
+
+  @media screen and (max-width: 420px) {
+    body {padding-bottom: 50px;}
+    h1 {font-size: 50px;}
+    h2 {font-size: 25px;}
+    h3, h4, #play-again {font-size: 20px;}
+    #image {width: 100%; height: auto;}
+    .btn {margin: 20px;}
+  }
