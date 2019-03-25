@@ -110,19 +110,24 @@ $(document).ready(function() {
             $("#starting-screen").show();
             $("#gameplay-screen").hide();
             $("#results-screen").hide();
-            stop();
             questionNumber = 0;
             correctAnswer = 0;
             wrongAnswer = 0;
             unanswered = 0;
+            timer = 10;
         };
 
 //GAMEPLAY SCREEN
-    //Start game by user click and display first question and answer options
+    //Start game by user click
         $(".start").click(function() {
             // aud();
             $("#starting-screen").hide();
             $("#gameplay-screen").show();
+            displayQuestions();
+        });
+
+    //Display first question and answer options
+        function displayQuestions() {
             intervalId = setInterval(decrement, 1000);
             decrement();
             $("#question").html("<h2>" + currentQuestion[questionNumber].question + "</h2>");
@@ -130,7 +135,7 @@ $(document).ready(function() {
             $("#answerB").html("<h3>" + currentQuestion[questionNumber].options[1] + "</h3");
             $("#answerC").html("<h3>" + currentQuestion[questionNumber].options[2] + "</h3");
             $("#answerD").html("<h3>" + currentQuestion[questionNumber].options[3] + "</h3");
-        });
+        };
     
     //Determine right, wrong, or unanswered answers for each question
         $("#answerA").click(function() {
