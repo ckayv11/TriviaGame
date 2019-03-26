@@ -84,12 +84,11 @@ $(document).ready(function() {
         
     //Decrement function
         function decrement() {
-            timer--;
             $("#show-time").html("<h3>" + "Time Remaining: " + timer + "</h3>");
             if (timer === 0) {
                 stop();
                 outOfTime();
-            };
+            };timer--;
         };
     
     //Stop function
