@@ -4,7 +4,7 @@
 
 **Objective:** Answer 10 Questions to Complete the Game!
 
-**Link to Live Game:** https://ckayv11.github.io/TriviaGame/
+**Link to Live Game:** https://christystthomas.com/TriviaGame/
 
 
 **Instructions:**
